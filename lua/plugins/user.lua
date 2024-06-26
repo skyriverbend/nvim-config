@@ -54,6 +54,23 @@ return {
     opts = function() require("telescope").load_extension "live_grep_args" end,
   },
   {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        window = {
+          mappings = {
+            ["u"] = "navigate_up",
+            ["-"] = "navigate_up",
+            ["C"] = "set_root",
+            ["P"] = "toggle_preview",
+            -- Add a custom mapping, e.g.:
+            -- ["<leader>cd"] = "cd",
+          },
+        },
+      },
+    },
+  },
+  {
     "ruifm/gitlinker.nvim",
     event = "VeryLazy",
     requires = {

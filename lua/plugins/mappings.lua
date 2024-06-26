@@ -6,8 +6,8 @@ return {
       mappings = {
         n = {
           ["<leader>fw"] = { function() require("telescope").extensions.live_grep_args.live_grep_args() end },
-          ["<S-l>"] = { function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end },
-          ["<S-h>"] = { function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end },
+          -- ["<S-l>"] = { function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end },
+          -- ["<S-h>"] = { function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end },
           ["<leader>x"] = { function() require("astrocore.buffer").close() end },
           ["<leader>aa"] = { function() require("harpoon.mark").add_file() end },
           ["<leader>am"] = { function() require("harpoon.ui").toggle_quick_menu() end },
